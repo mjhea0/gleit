@@ -23,12 +23,14 @@ window.onload = (function() {
   };
 
   Ball.prototype.draw = function(context) {
+    var baseLen = 8;
     context.fillStyle = this.color;
     context.beginPath();
-    context.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    context.arc(this.x, this.y, this.radius, 0, Math.PI * 90 / 180, Math.PI * 270 / 180, true);
     context.closePath();
     context.fill();
   };
+
 
   Ball.prototype.invertVertical = function() {
     this.vertical = !this.vertical;
@@ -45,13 +47,7 @@ window.onload = (function() {
 
   var BouncingBalls = {
     colors: [
-      'red',
-      'blue',
-      'indigo',
-      '#b4d455',
-      'slateblue',
-      '#333',
-      'orange'
+      '#C757B8'
     ],
 
     collection: [],
