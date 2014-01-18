@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootswatch/3.0.3/amelia/bootstrap.min.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type='text/javascript' src='js/main.js'></script>
+  <script type='text/javascript' src="js/bouncing-balls.js"></script>
   <style>
     body {
       background-color: white;
@@ -21,6 +22,11 @@
     .heart {
       color: #C757B8;
     }
+    .canvas-wrapper {
+      border: 1px gray;
+      width: 500px;
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
@@ -31,7 +37,9 @@
       <br>
       <br>
       <h3>Click <span class="heart-click heart glyphicon glyphicon-heart"></span> for kisses</h3>
-      <h2 id="heart-append"><h2>
+      <div class="canvas-wrapper">
+        <canvas id="canvas" width="500px" height="500px"></canvas>
+      </div>
     </center>
   </div>
 </body>
