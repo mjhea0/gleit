@@ -17,3 +17,24 @@ img {
 
 }
 
+.end {
+  background: #e99002;
+  padding: 0.5em 0.7em;
+  color: #ecf0f1;
+  max-width: 500px;
+}
+
+.end div {
+  display: inline-block;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.end div span {
+  display: block;
+  border-top: 1px solid #cecece;
+  padding-top: 3px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
