@@ -17,8 +17,14 @@ img {
 
 }
 
+body {
+  background-color: #FFFFFF;
+  color: black;
+}
+
 .end {
-  background: #48ca3b;
+  background: #003366;
+  color: white;
   padding: 0.5em 0.7em;
   max-width: 500px;
 }
