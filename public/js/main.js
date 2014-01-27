@@ -23,6 +23,20 @@ $(function() {
     render: function(data) {
       $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
     }
-  });  
+  }); 
+
+  $('.search').on('keyup', function(e){
+    if(e.keyCode === 13) {
+      var num = $(this).val();
+      var out = ""
+      console.log(num)
+      for (var i = 0; i < num; i++) {
+        out = out + "kiss "
+      };
+      // var out = parameters * "kiss "
+      $('.results').html(out);
+    };
+  }); 
 
 });
+
