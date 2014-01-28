@@ -29,12 +29,15 @@ $(function() {
     if(e.keyCode === 13) {
       var num = $(this).val();
       var out = ""
-      console.log(num)
+      if (num > 100) {
+        num = 100
+        console.log("handle that")
+        out = out + "Sorry. I can only handle 100 kisses at once." + "<br><br>"
+      };
       for (var i = 0; i < num; i++) {
         out = out + "kiss "
+        $('.results').html(out);
       };
-      // var out = parameters * "kiss "
-      $('.results').html(out);
     };
   }); 
 
