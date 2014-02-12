@@ -17,7 +17,7 @@
 
 $(function() {
 
-  var endDate = "February 12, 2014 10:54:00";
+  var endDate = "February 14, 2014 00:00:00";
   $('.end').countdown({
     date: endDate,
     render: function(data) {

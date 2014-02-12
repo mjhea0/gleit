@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>gone, but not forgotten</title>
+  <title>gleit ALL OVER me</title>
   <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootswatch/3.0.3/amelia/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -11,11 +11,43 @@
       padding-top: 50px;
       max-width: 500px;
     }
+    img {
+      max-width: 100px;
+      max-height: auto;
+    }
+    .heart {
+      color: #336699;
+    }
+    .canvas-wrapper {
+      border: 5px black;
+      width: 500px;
+      margin: 0 auto;
+    }
+    .search {
+      text-align: center;
+      width: 250px;
+      height: 50px;
+      border-radius:8px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-  	<img src="images/icon_26966.png">
+    <center>
+      <h1><br>See you soon.</h1>
+      <h3><span class="heart-click heart glyphicon glyphicon-heart"></span></h3>
+      <h3 class="end"><h3>
+      <br>
+      <br>
+      <h2>While you wait ..</h2>
+      <input type="text" class="form-control search" placeholder=".. enter the number of kisses ..">
+      <br>
+      <div class="lead results"></div>
+   
+      <div class="canvas-wrapper">
+        <canvas id="canvas" width="500px" height="500px"></canvas>
+      </div> 
+    </center>
   </div>
 </body>
 </html>
